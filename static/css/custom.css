@@ -1,0 +1,28 @@
+.img1 {
+	background: blue;
+	border-radius: 30px;
+}
+
+.stop_docorate {
+	text-decoration: none;
+}
+
+.author_img {
+	border-radius: 20px;
+}
+
+.mylink:link {
+	color: red;
+}
+
+.mylink:visited {
+	color: red;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.bg {
+	background-image: url('./static/img/1.jpg');
+}

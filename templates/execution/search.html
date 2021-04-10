@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'execution/header.html' %}
+    <title>Search - {{config.website_name}}</title>
+</head>
+
+<body style="background-color: darkslategrey;">
+    <div class="container-fluid">
+        <center>
+            <h1 class="my-2 text-light">
+                Search
+            </h1>
+        </center>
+        {% for result in results %}
+        <div class="card my-3">
+            <div class="container row m-1 px-1">
+                <a href="{{result.image.url}}">
+                    <img src="{{result.image.url}}" alt="Image" height="200" width="200">
+                </a>
+                <div class="column mx-2">
+                    Name : {{result.name}} <br>
+                    Username : @{{result.username}} <br>
+                    Age : {{result.age}} <br>
+                    Gender : {{result.gender}} <br>
+                    Nationality : {{result.nationality}} <br>
+                    Height : {{result.height}} <br>
+                    Hair Color : {{result.hair_color}} <br>
+                    Occupation : {{result.occupation}} <br>
+                    Address : {{result.address}} <br>
+                    Bio : {{result.bio}} <br>
+                    Social Links : {{result.social}} <br>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
